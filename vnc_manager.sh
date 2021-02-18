@@ -48,7 +48,7 @@ vncserver :$DISPLAY_ -geometry $GEOMETRIA_ -autokill  -xstartup /usr/bin/xterm &
 lista_display() {
 vncserver -list > lista_display.txt
 
-awk '/^[:[:digit:]]/ { print("DISPLAY\t" $1, "PID\t", $2)}' lista_display.txt
+awk '/^[[:digit:]]/ { print("DISPLAY\t" $1, "PID\t", $2)}' lista_display.txt
 cat lista_display.txt
 
 }
