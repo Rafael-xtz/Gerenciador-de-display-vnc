@@ -11,4 +11,5 @@ cd Gerenciador-de-display-vnc
 chmod +x select.sh
 
 Para usar:
+Execute no servidor
 ./select.sh
