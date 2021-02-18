@@ -37,7 +37,7 @@ iniciar_display() {
 	fi
 
 
-vncserver :$DISPLAY_ -geometry $GEOMETRIA_ -autokill  -xstartup /usr/bin/xterm && $GERENCIADOR_JANELAS_ &
+vncserver :$DISPLAY_ -geometry $GEOMETRIA_ -autokill  -xstartup /usr/bin/xterm && $GERENCIADOR_JANELAS_ :$DISPLAY_ &
 
 
 
