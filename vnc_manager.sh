@@ -31,9 +31,9 @@ iniciar_display() {
 	echo "Abrir gerenciador de janelas? (default sim)"
 	if [ -z `read GERENCIADOR_JANELAS` ]; 
 	then 
-		GERENCIADOR_JANELAS="$GERENCIADOR_JANELAS_DEFAULT_ :$DISPLAY_"
+		GERENCIADOR_JANELAS_="$GERENCIADOR_JANELAS_DEFAULT_ :$DISPLAY_"
 	else
-		unset GERENCIADOR_JANELAS
+		unset GERENCIADOR_JANELAS_
 	fi
 
 
